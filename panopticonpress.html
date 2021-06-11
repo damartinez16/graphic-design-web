@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Panopticon Press</title>
+</head>
+<link href="css/homeworkhome.css" type="text/css" rel=stylesheet />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+<div id="page">
+			<div id="logo">
+				<a href="index.html"><img class="selflogo" src="images/selfd.png" alt="Danielle A. Martinez" width="150"/></a><br><img class="dam" src="images/dam.png" alt="Danielle A. Martinez" width="200"></br>
+			</div>
+			<br><nav>
+				<ul>
+					<div class="dropdown"><a href="#Graphic Design"><strong>Graphic Design</strong></a>
+					  <div class="dropdown-content">
+					<a href="bodyandsoul.html">Body and Soul</a>
+					<a href="saulbass.html">Saul Bass</a>
+					<a href="italianfuturism.html">Italian Futurism</a>
+					<a href="visitelpaso.html">Visit El Paso</a>
+					<a href="home.html">HOME Annual Report</a>
+					<a href="designgraveyard.html">Design Graveyard Collection</a>
+					<a href="artnouveau.html">Art Nouveau in El Paso</a>
+					<a href="alamo.html">Alamo Drafthouse Poster</a>
+					<a href="panopticonpress.html">Panopticon Press Packaging</a>
+				  </div></div>
+				  <li><a href="about.html"><strong>About</strong></a></li>
+					<li><a href="resumenew.html"><strong>Resume</strong></a></li>
+					<li><a href="contact.html"><strong>Contact</strong></a></li>
+					<li><a href="https://damartinez16.github.io/portfolio/" target="_blank"><strong>Software Engineering Projects</strong></a></li>
+				</ul></div></nav>
+			<!-- Slideshow container -->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+ 
+  <img src="images/packaging1.png" style="width:700px">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/alex.png" style="width:300px">
+</div>
+		<div class="mySlides fade">
+  <img src="images/alex150.png" style="width:700px">
+</div>
+	
+<div class="mySlides fade">
+  <img src="images/offred.png" style="width:300px">
+</div>
+			<div class="mySlides fade">
+  <img src="images/offred2.png" style="width:700px">
+</div>
+
+
+<a class="back" onclick="plusSlides(-1)"></a>
+<a class="forward" onclick="plusSlides(1)"></a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>  
+	<span class="dot" onclick="currentSlide(3)"></span> 
+	<span class="dot" onclick="currentSlide(4)"></span>  
+	<span class="dot" onclick="currentSlide(5)"></span>  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+				<div id="figureinfo">
+					<div class="row">
+					<div class="columnleft">
+						<h3>Panopticon Press</h3></div>
+						<div class="columnright"><p>Packaging in the form of book covers, box, and sculpted figurines for a fictitious book publishing company. 
+							</p></div></div></div>
+		<div id="prevnextbuttons">
+		<a href="artnouveau.html" class="previous">« Previous Project</a>
+		<a href="bodyandsoul.html" class="next">Next Project »</a></div>
+	
+			<footer>&copy;<script type="text/javascript">
+  document.write(new Date().getFullYear());
+					</script>&nbsp;Danielle A. Martinez</footer>
+</body>
